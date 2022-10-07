@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 /* Fonts */
-:root {
-  --jk-width: 200px;
-}
 .jkCtnActive {
   @apply flex;
 }
 .imageContainer {
 }
 .imageContainer .imageWrapper {
-  width: var(--jk-width);
-  @apply drop-shadow-myDropOne hover:drop-shadow-myDropTwo m-2 hover:-translate-y-4 transition-all overflow-hidden relative z-0;
+  @apply drop-shadow-myDropOne sm:w-[40%] md:w-[30%] lg:w-52 hover:drop-shadow-myDropTwo p-2 bg-white m-1 hover:-translate-y-4 transition-all overflow-hidden relative z-0;
 }
 .imageContainer .imageWrapper img {
   @apply object-cover -z-10;
@@ -24,7 +20,7 @@
   @apply font-tilti leading-[1rem];
 }
 .imageContainer .imageWrapper section p {
-  @apply text-xs text-slate-500 mt-1;
+  @apply text-xs text-slate-800/80 mt-1;
 }
 .active {
   @apply bg-red-500;
