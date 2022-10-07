@@ -75,7 +75,7 @@ const doAjaxReq = (opti) => {
       }
     }
   };
-  xhr.open("GET", "../data/ineffable.json", true);
+  xhr.open("GET", "data/ineffable.json", true);
   xhr.send();
 };
 // firstTimeWhenPageLoad
